@@ -30,6 +30,7 @@ class Board extends Component {
 }
   render() {
     
+
        const winner = calculateWinner(this.state.squares);
   let status;
   if (winner) {
@@ -76,6 +77,7 @@ function calculateWinner(squares) {
   ];
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
+    //alert(squares[a]);
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }

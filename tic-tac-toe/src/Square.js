@@ -10,6 +10,7 @@ class Square extends Component {
   {this.props.value} </button>
     );
   }
+
 }
 
 export default Square;
